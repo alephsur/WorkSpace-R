@@ -1,0 +1,16 @@
+{
+    "contents" : "shinyUI(fluidPage(\n  tags$h2(\"Gas Prices\"),\n  fluidRow(\n    column(width=6,\n      p(\"This app uses the Google GeoCoding and mygasfeed apis to compare gas prices based on location using an NVD3 Rchart.\"),\n      p(\"Source code:\",\n        a(href=\"https://github.com/jcheng5/shiny-js-examples/tree/master/output\", \"@jcheng5/shiny-js-examples/output\"))\n    )\n  ),\n  fluidRow(\n    column(width=9,\n      lineChartOutput(\"mychart\")\n     \n    ),\n    column(width=3,\n      textInput(inputId = \"address\", label = \"Address or Area Code\", value = \"49685\"),\n      textOutput(\"text1\"),\n      br(),\n      br(),\n      div(class=\"span6\", checkboxInput(inputId = \"rank\", label = \"Rank by distance\", value = FALSE)),\n      div(class=\"span6\", submitButton(\"Chart prices\"))\n    )\n  ),\n    \n    fluidRow(\n    column(width=2,\n      br(),\n      br(),\n      br(),\n      p(\"Notes:\"),\n      p(\"Broken series lines will may be visible for NULL data points.\"),\n      p(\"Clicking on the key markers will show/hide a series.\"),\n      p(\"If Google cannot parse the location the page will need to be refreshed.\"),\n      p(\"If no gas prices are tracked in the chosen location the page will need to be refreshed.\")\n    )\n  )\n  \n))\n",
+    "created" : 1403642851113.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1440303171",
+    "id" : "481CB109",
+    "lastKnownWriteTime" : 1403509576,
+    "path" : "C:/Users/portatil/WorkSpace R/correcciones de pares week1/DevelopingDataProducts-Project-master/ui.R",
+    "project_path" : "ui.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

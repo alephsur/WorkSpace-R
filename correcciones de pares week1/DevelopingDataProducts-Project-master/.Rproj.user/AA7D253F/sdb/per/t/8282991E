@@ -1,0 +1,16 @@
+{
+    "contents" : "  library(RJSONIO) # acquiring and parsing data\n  library(ggmap)\n  library(RCurl)\n  library(plyr)  # manipulating data\n  library(lubridate) #dates\n  \nshinyServer(function(input, output, session) {\n\n    # get the geocode for the address\n    gGeoCode <- function(address,verbose=FALSE) {\n        address.list<-c(input$address)\n    } ##\n\n    output$mychart <- renderLineChart({\n        geoCodes <- geocode(input$address, output = c(\"latlona\"))\n        # http://api.mygasfeed.com/stations/radius/37.4954481/-88.41857039999999/45/mid/price/chmodpl9lb.json\n\n        # obtain and process daily count data by month by target\n        getStation <- function(type){\n            url <- paste(\"http://api.mygasfeed.com/stations/radius/\", geoCodes[1,2], \"/\", geoCodes[1,1], \"/45/\", type, \"/price/bvcyecd3ld.json\", sep=\"\") #,yr,mth,\"/\",target)\n            raw.data <- readLines(url, warn=\"F\") \n            rd  <- fromJSON(raw.data)\n            rd.geoLocation <- rd$geoLocation\n            rd.stations <- rd$stations\n\n            rd.stations[grep(\"N/A\", rd.stations$price, ignore.case=TRUE), \"price\"] <- NA\n\n            # Return a data frame. Each column will be a series in the line chart.\n            df <- data.frame(\n                rd.stations[,c(\"price\", \"date\", \"city\", \"address\", \"station\", \"distance\", \"id\")]\n            )\n            \n            if(input$rank == TRUE) df <- df[order(df$distance), ]\n            #df <- df[complete.cases(df[,1]),]\n            colnames(df[1]) <- c(\"Regular\")\n            df\n        }\n        reg <- getStation(\"reg\")\n        mid <- getStation(\"mid\")\n        pre <- getStation(\"pre\")\n        diesel <- getStation(\"diesel\")\n\n        df <- cbind(reg$price, mid$price, pre$price, diesel$price, by=c(\"id\"))\n        \n        df <- data.frame(df[,1:4])\n        rename(df, c(\"V1\" = \"Regular\", \"V2\" = \"Midgrade\", \"V3\" = \"Premium\", \"V4\" =\"Diesel\"))\n    })\n\n\n  output$text1 <- renderText({ \n      geoCodes <- geocode(input$address, output = c(\"latlona\"))\n\n      paste(\"Location: \", geoCodes$address)\n    })\n  \n\n})\n",
+    "created" : 1403642867565.000,
+    "dirty" : true,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1581638791",
+    "id" : "8282991E",
+    "lastKnownWriteTime" : 1403509576,
+    "path" : "C:/Users/portatil/WorkSpace R/correcciones de pares week1/DevelopingDataProducts-Project-master/server.R",
+    "project_path" : "server.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

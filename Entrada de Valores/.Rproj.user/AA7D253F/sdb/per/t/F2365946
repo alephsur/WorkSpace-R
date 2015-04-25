@@ -1,0 +1,17 @@
+{
+    "contents" : "library(shiny)\nx <<- 1\ny <<- 0\nshinyServer(\n  function(input,output){\n    y<<-y+1\n    output$text1<-renderText({input$text1})\n    output$text2<-renderText({input$text2})\n    output$text3<-renderText({as.numeric(input$text1)+1})\n    output$text4<-renderText(y)\n    output$text5<-renderText(x)\n  })\n\n",
+    "created" : 1403200271032.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "400334826",
+    "id" : "F2365946",
+    "lastKnownWriteTime" : 1401897591,
+    "path" : "C:/Users/portatil/WorkSpace R/Entrada de Valores/server.R",
+    "project_path" : "server.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

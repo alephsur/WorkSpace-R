@@ -1,0 +1,17 @@
+{
+    "contents" : "library(shiny)\nshinyUI(pageWithSidebar(\n  headerPanel(\"Hello shiny\"),\n  sidebarPanel(\n    textInput(inputId=\"text1\",label=\"input text1\"),\n    textInput(inputId=\"text2\",label=\"input text2\"),\n    actionButton(\"goButton\",\"Go\")\n    ),\n  mainPanel(\n    p(\"Output text1\"),\n    textOutput(\"text1\"),\n    p(\"Output text2\"),\n    textOutput(\"text2\"),\n    p(\"Output text3\"),\n    textOutput(\"text3\")\n    )\n  ))\n",
+    "created" : 1402520912519.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1166653716",
+    "id" : "2D26B8F6",
+    "lastKnownWriteTime" : 1401898295,
+    "path" : "C:/Users/portatil/WorkSpace R/boton/ui.r",
+    "project_path" : "ui.r",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

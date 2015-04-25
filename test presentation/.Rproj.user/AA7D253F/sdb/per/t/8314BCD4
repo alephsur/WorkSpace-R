@@ -1,0 +1,16 @@
+{
+    "contents" : "My test presentation\n========================================================\nauthor: David Franco Gutierrez\ndate: `r date()`\n\nFirst Slide\n========================================================\n\nFor more details on authoring R presentations click the\n**Help** button on the toolbar.\n\n- Bullet 1\n- Bullet 2\n- Bullet 3\n\nSlide With Code\n========================================================\n\n```{r, echo=FALSE}\nsummary(cars)\n```\n\nSlide With Plot\n========================================================\n\n```{r, echo=FALSE}\nplot(cars)\n```\n",
+    "created" : 1403197203512.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2788917097",
+    "id" : "8314BCD4",
+    "lastKnownWriteTime" : 1403197297,
+    "path" : "C:/Users/portatil/WorkSpace R/test presentation/test.Rpres",
+    "project_path" : "test.Rpres",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_presentation"
+}

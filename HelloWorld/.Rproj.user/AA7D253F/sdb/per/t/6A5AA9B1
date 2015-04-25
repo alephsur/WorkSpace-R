@@ -1,0 +1,17 @@
+{
+    "contents" : "library(shiny)\nshinyUI(pageWithSidebar(\n    headerPanel(\"Data science FTW!\"),\n    sidebarPanel(\n      h3('Sidebar text')\n      ),\n    mainPanel(\n      h3('Main Panel text')\n    )\n))\n",
+    "created" : 1403198875322.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2569081840",
+    "id" : "6A5AA9B1",
+    "lastKnownWriteTime" : 1401895941,
+    "path" : "C:/Users/portatil/WorkSpace R/HelloWorld/ui.R",
+    "project_path" : "ui.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

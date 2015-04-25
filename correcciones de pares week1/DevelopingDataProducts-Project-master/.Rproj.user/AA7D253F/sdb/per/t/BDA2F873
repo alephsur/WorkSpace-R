@@ -1,0 +1,16 @@
+{
+    "contents" : "# Any code in this file is guaranteed to be called before either\n# ui.R or server.R\n\nsource(\"linechart.R\")\n",
+    "created" : 1403643146382.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2860892455",
+    "id" : "BDA2F873",
+    "lastKnownWriteTime" : 1403509576,
+    "path" : "C:/Users/portatil/WorkSpace R/correcciones de pares week1/DevelopingDataProducts-Project-master/global.R",
+    "project_path" : "global.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

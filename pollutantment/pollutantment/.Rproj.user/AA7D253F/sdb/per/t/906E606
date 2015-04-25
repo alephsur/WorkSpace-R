@@ -1,0 +1,17 @@
+{
+    "contents" : "complete <- function(directory, id = 1:332) {\n\n  \n  nobs <- function(id) {\n    path <- file.path(directory, paste(sprintf(\"%03d\", as.numeric(id)), \".csv\", sep=\"\"))\n    return (sum(complete.cases(read.csv(path))))\n  }\n  return (data.frame(id=id, nobs=sapply(id, nobs)))\n}\n\n",
+    "created" : 1406566523317.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1111571791",
+    "id" : "906E606",
+    "lastKnownWriteTime" : 1406566589,
+    "path" : "C:/Users/portatil/WorkSpace R/pollutantment/pollutantment/complete.R",
+    "project_path" : "complete.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

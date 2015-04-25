@@ -1,0 +1,17 @@
+{
+    "contents" : "library(manipulate)\nmanipulate(plot(1:x),x=slider(1,100))\n",
+    "created" : 1403251575352.000,
+    "dirty" : true,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "1914364601",
+    "id" : "F34591F1",
+    "lastKnownWriteTime" : 132560656,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

@@ -1,0 +1,16 @@
+{
+    "contents" : "---\ntitle       : Mi primera presentacion\nsubtitle    : si señor\nauthor      : David Franco Gutierrez\njob         : Porgramador\nframework   : shower        # {io2012, html5slides, shower, dzslides, ...}\nhighlighter : highlight.js  # {highlight.js, prettify, highlight}\nhitheme     : tomorrow      # \nwidgets     : []            # {mathjax, quiz, bootstrap}\nmode        : selfcontained # {standalone, draft}\nknit        : slidify::knit2slides\n---\n\n## Read-And-Delete\n\n1. Edit YAML front matter\n2. Write using R Markdown\n3. Use an empty line followed by three dashes to separate slides!\n\n--- .class #id \n\n## Slide 2\n\n````{r,eval=FALSE}\nfit <- lm(y ~ x1 + x2 + x3)\nsumary(fit)\n```\n\n\n",
+    "created" : 1402851707559.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1568996286",
+    "id" : "1E7A9A88",
+    "lastKnownWriteTime" : 1403452599,
+    "path" : "C:/Users/portatil/WorkSpace R/slidify/first_deck/index.Rmd",
+    "project_path" : "first_deck/index.Rmd",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_markdown"
+}

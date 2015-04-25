@@ -1,0 +1,17 @@
+{
+    "contents" : "library(shiny)\nshinyServer(\n  function(input,output){\n    output$text1<-renderText({input$text1})\n    output$text2<-renderText({input$text2})\n    output$text3<-renderText({\n      input$goButton\n      isolate(paste(input$text1,input$text2))\n    })\n  }\n  )",
+    "created" : 1402520914965.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3342078667",
+    "id" : "578EC0BE",
+    "lastKnownWriteTime" : 1401898413,
+    "path" : "C:/Users/portatil/WorkSpace R/boton/server.R",
+    "project_path" : "server.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

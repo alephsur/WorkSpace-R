@@ -1,0 +1,17 @@
+{
+    "contents" : "library(shiny)\nshinyUI(pageWithSidebar(\n  headerPanel(\"Hello Shiny!\"),\n  sidebarPanel(\n    textInput(inputId = \"text1\",label =\"input text1\"),\n    textInput(inputId = \"text2\",label =\"input text2\")\n    ),\n  mainPanel(\n    p(\"Output text1\"),\n    textOutput(\"text1\"),\n    p(\"Output text2\"),\n    textOutput(\"text2\"),\n    p(\"Output text3\"),\n    textOutput(\"text3\"),\n    p(\"Output text4\"),\n    textOutput(\"Text 4\"),\n    p(\"Inside text, but non-reactive\"),\n    textOutput(\"Text 5\")\n    )\n  ))\n\n",
+    "created" : 1403198593908.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "830350210",
+    "id" : "3394FAB7",
+    "lastKnownWriteTime" : 1401897523,
+    "path" : "C:/Users/portatil/WorkSpace R/Entrada de Valores/ui.R",
+    "project_path" : "ui.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}
